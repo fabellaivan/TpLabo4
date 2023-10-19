@@ -1,0 +1,52 @@
+.container {
+    font-family: 'Arial', sans-serif; 
+    background-color: #f0f0f0; 
+    padding: 20px; 
+}
+
+.center-text {
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+.title {
+    font-family: 'Verdana', sans-serif; /* Fuente del título */
+    font-size: 36px; /* Tamaño de la fuente del título */
+    color: #333; /* Color del texto del título */
+}
+
+#cuadro {
+    background-color: #ffffff; /* Color de fondo del cuadro de entrada y botón */
+    padding: 20px; /* Espaciado interno del cuadro */
+    border-radius: 10px; /* Esquinas redondeadas del cuadro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del cuadro */
+}
+
+input[type="text"] {
+    font-family: 'Courier New', monospace; /* Fuente del campo de texto */
+    font-size: 18px; /* Tamaño de la fuente del campo de texto */
+    width: 80%; /* Ancho del campo de texto */
+    padding: 10px; /* Espaciado interno del campo de texto */
+    margin-bottom: 20px; /* Espaciado inferior del campo de texto */
+}
+
+.btn-primary {
+    font-family: 'Arial', sans-serif; /* Fuente del botón */
+    font-size: 18px; /* Tamaño de la fuente del botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border: none; /* Sin borde en el botón */
+    border-radius: 5px; /* Esquinas redondeadas del botón */
+    background-color: #007bff; /* Color de fondo del botón primario */
+    color: #ffffff; /* Color del texto del botón */
+    cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Cambio de color al pasar el mouse por encima del botón */
+}
+
+.played-words {
+    font-weight: bold; /* Texto en negrita para las palabras ya jugadas */
+    display: block; /* Mostrar en una nueva línea */
+    margin-top: 20px; /* Espaciado superior */
+}

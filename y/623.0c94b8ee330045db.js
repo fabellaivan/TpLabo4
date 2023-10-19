@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkappUTN=self.webpackChunkappUTN||[]).push([[623],{1623:(i,E,o)=>{o.r(E),o.d(E,{EjercicioModule:()=>_});var l=o(6814),n=o(1695),r=o(95),u=o(4946);let _=(()=>{var c;class a{}return(c=a).\u0275fac=function(s){return new(s||c)},c.\u0275mod=u.oAB({type:c}),c.\u0275inj=u.cJS({imports:[l.ez,n.z,r.u5]}),a})()}}]);

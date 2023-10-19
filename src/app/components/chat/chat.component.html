@@ -1,0 +1,33 @@
+<!-- <div *ngIf="userLogeado && !viewChat" class="chatIconContainer"(click)="viewChat=true"> -->
+<div *ngIf="userLogeado && !viewChat" class="chatIconContainer"(click)="closeOpenChat(true)"> 
+  <img src="https://cdn-icons-png.flaticon.com/512/61/61516.png" class="iconoChat" alt="chat Icon">
+</div>
+
+<div class="card text-center cardContainer" *ngIf="userLogeado && viewChat">
+
+    <div class="card-header">Chatea!
+      <div class="closeChat"(click)="closeOpenChat(false)">x</div>
+    </div>
+ 
+    <div class="card-body">
+      <div id="containerMsg" class="containerMsg">
+        <div *ngFor="let chat of chats" class="p-2 margin" [ngClass]="userLogeado.uid==chat.id ? 'send' : 'recept'">
+         <p class="hour">{{chat.hour}}</p>         
+         <p class="content">{{ chat.contenido }}</p>
+        </div>
+      </div>
+
+    </div>
+
+    <form class="card-footer text-muted input-group "(ngSubmit)="sendMsg()">
+        <input type="text" class="form-control" placeholder="Mensaje" [(ngModel)]="newMsj" [ngModelOptions]="{standalone: true}">
+        <div class="input-group-append" id="basic-addon2" (click)="sendMsg()">
+
+          <span class="input-group-text" id="basic-addon2">
+            <img class="imgEnv small" src="../../../assets/send.png" width=52px alt="send message">
+          </span>
+
+        </div>
+    </form>
+
+</div>

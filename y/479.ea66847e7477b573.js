@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkappUTN=self.webpackChunkappUTN||[]).push([[479],{4479:(E,s,t)=>{t.r(s),t.d(s,{ChatModule:()=>l});var u=t(6814),o=t(95),n=t(5879);let l=(()=>{class a{static#t=this.\u0275fac=function(c){return new(c||a)};static#a=this.\u0275mod=n.oAB({type:a});static#s=this.\u0275inj=n.cJS({imports:[u.ez,o.u5]})}return a})()}}]);

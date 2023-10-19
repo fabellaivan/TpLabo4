@@ -1,0 +1,44 @@
+div {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    background: url('../../../../assets/fondo.jpg') no-repeat center center fixed;
+  }
+  
+  h2 {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #fff;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+  
+  button {
+    margin: 10px;
+    font-size: 1em;
+  }
+  
+  .btn-outline-primary {
+    color: #007bff;
+    border-color: #007bff;
+    background-color: transparent;
+  }
+  
+  .btn-outline-primary:hover {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  p {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #fff;
+  }

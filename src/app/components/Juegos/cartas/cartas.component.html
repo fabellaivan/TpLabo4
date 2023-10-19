@@ -1,0 +1,12 @@
+<div *ngIf="cartas.length > 0">
+  <h2>Carta Actual:</h2>
+  <img [src]="cartas[0]?.image" alt="{{ cartas[0]?.code }}" />
+
+  <h2>¿La próxima carta será mayor o menor?</h2>
+  <button class="btn btn-outline-primary" (click)="comparar('mayor')">Mayor</button>
+  <button class="btn btn-outline-primary" (click)="comparar('menor')">Menor</button>
+  <button class="btn btn-outline-primary" (click)="comparar('igual')">Igual</button>
+  <h2>Resultado:</h2>
+  <p>{{ resultado }}</p>
+</div>
+ 

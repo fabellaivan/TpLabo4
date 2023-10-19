@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="center-text">
+        <h1 class="title">{{ title }}</h1>
+    </div>
+
+    <h2 class="center-text">Ingrese una palabra</h2>
+
+    <div class="center-text" id="cuadro">            
+        <input id="palabra" type="text" maxlength="20" #palabraAdivinar/>
+        <br/><br/>
+        <input type="button" value="Jugar!!" class="btn btn-primary" (click)="IngresaPalabra(palabraAdivinar.value)"/>
+        <br/><br/>
+        <a class="played-words">Las palabras ya jugadas son: {{Servicio.arreglo}}</a>
+    </div>
+</div>

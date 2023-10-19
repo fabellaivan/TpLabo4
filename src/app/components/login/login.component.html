@@ -1,0 +1,42 @@
+<body >
+
+<div class="container">
+
+  <div class="row my-5" *ngIf="!logOn">
+
+    <div class="col-lg-6 col-md-8 login-box  mx-auto">
+      <div class="col-lg-12 login-key">
+        <i class="fa fa-key" aria-hidden="true"></i>
+      </div>
+
+          <div class="col-lg-12 login-title">ADMIN PANEL</div>
+
+          <form  class="row" (ngSubmit)="onSubmit()">
+
+            <div class="card-body p-3">
+              <label class="form-control-label">USERNAME</label>
+              <input type="text"  [(ngModel)]="usr.email" name="email" >
+            </div>
+            <div class="card-body p-3">
+              <label class="form-control-label">PASSWORD</label>
+              <input type="password" [(ngModel)]="usr.pass" name="password"/>
+            </div>
+
+            <div class="login-btn">
+              <button type="submit" class="btn btn-outline-primary" name="login">
+                LOGIN
+              </button>
+
+              <button type="submit" class="btn btn-outline-primary" name="Autocompletar">
+                Autocompletar
+            </button>
+            </div>
+            <label><a routerLink="/Registro">Registrarse</a></label>
+          </form>
+
+    </div>
+  </div>
+
+</div>
+</body>
+

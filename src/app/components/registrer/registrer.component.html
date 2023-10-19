@@ -1,0 +1,15 @@
+<div class="testbox">
+  <h1>Registration</h1>
+
+  <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label id="icon" for="email"><i class="icon-envelope"></i></label>
+      <input type="text" id="email" placeholder="Email" required class="form-control" formControlName="email">
+    </div>
+    <div class="mb-3">
+      <label id="icon" for="password"><i class="icon-shield"></i></label>
+      <input type="password" placeholder="Password" required class="form-control" formControlName="password">
+    </div>
+    <button type="submit" class="button">Register</button>
+  </form>
+</div>

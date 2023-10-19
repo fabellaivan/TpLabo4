@@ -1,0 +1,37 @@
+/* .card{
+    margin: 8px; 
+    padding: 8px;
+    border-radius: 1cm; 
+    background-image: url('../../../../assets/fondo.jpg');
+  } */
+  .custom-card {
+    background-color: #f0f0f0; /* Fondo de la tarjeta */
+    border: 1px solid #ccc; /* Borde de la tarjeta */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    padding: 20px; /* Espaciado interno */
+}
+
+.flag-container {
+    text-align: center; /* Centrar la imagen del país */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.pregunta-text {
+    font-family: Arial, sans-serif; /* Fuente de la pregunta */
+    font-size: 24px; /* Tamaño de la fuente de la pregunta */
+    color: #333; /* Color del texto de la pregunta */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.custom-btn {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente de los botones */
+    font-size: 18px; /* Tamaño de la fuente de los botones */
+    background-color: #4caf50; /* Color de fondo de los botones */
+    color: #fff; /* Color del texto de los botones */
+    margin-bottom: 10px; /* Espaciado inferior entre los botones */
+}
+
+.custom-btn:hover {
+    background-color: #45a049; /* Cambio de color al pasar el mouse por encima */
+}
