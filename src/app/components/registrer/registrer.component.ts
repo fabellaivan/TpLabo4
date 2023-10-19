@@ -3,6 +3,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 
 import { Router } from '@angular/router';
 import { UsrAuthService } from 'src/app/services/usr-auth.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-registrer',
@@ -24,14 +25,25 @@ export class RegistrerComponent {
       const formData = this.registrationForm.value;
       this.userService
         .register(formData)
-        .then((response) => {
-          if (response != null) {
+        .then((response: any) => {
+          if (response.success) {
             this.router.navigate(['/Home']);
+          } else {
+            Swal.fire({
+              title: 'Error',
+              text: response.error,
+              icon: 'error',
+            });
           }
         })
         .catch((error) => {
-          console.error('Error al registrar:', error);
+          Swal.fire({
+            title: 'Error',
+            text: 'El usuario ya existe.',
+            icon: 'error',
+          });
         });
     }
   }
+
 }

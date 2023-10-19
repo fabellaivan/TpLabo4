@@ -25,11 +25,14 @@ export class UsrAuthService {
   }
   async register({ email, password }: any) {
     try {
-      
-      return await this.afauth.createUserWithEmailAndPassword(email, password);
-    } catch (err) {
-      console.log('error en login: ', err);
-      return null;
+      const userCredential = await this.afauth.createUserWithEmailAndPassword(email, password);
+      return { success: true, user: userCredential.user };
+    } catch (err:any) {
+      if (err.code === 'auth/email-already-in-use') {
+        return { success: false, error: 'El correo electrónico ya está en uso por otra cuenta.' };
+      } else {
+        return { success: false, error: 'Se produjo un error al registrar el usuario. Por favor, inténtelo nuevamente más tarde.' };
+      }
     }
   }
 
