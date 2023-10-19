@@ -1,5 +1,6 @@
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ErrorComponent } from './components/error/error.component';
 const routes: Routes = [
   {
     path: '',
@@ -30,12 +31,9 @@ const routes: Routes = [
     path: 'Juegos',
     loadChildren: () =>
       import('./components/Juegos/juegos.module').then((mod) => mod.JuegosModule)
-  }
-  
-  //  {
-  //    path: "**",
-  // // component:NotFoundComponent
-  //  }
+  },
+  { path:"**", component: ErrorComponent }
+
 ];
 
 @NgModule({
