@@ -34,7 +34,7 @@ export class MsgService {
   }
 
 
-  savMsg(id: string, contenido: string) {
+  savMsg(id: string, email:string,contenido: string) {
 
     const date = new Date();
     addDoc(this.msgRef, <msg>{
@@ -55,7 +55,8 @@ export class MsgService {
         fractionalSecondDigits: 2
       }),
       id: id,
-      contenido: contenido
+      contenido: contenido,
+      usr:email
     });
   }
 

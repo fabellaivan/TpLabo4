@@ -3,4 +3,5 @@ export interface msg {
     hour: string,
     id?: string; 
     contenido: string;
+    usr:string;
   }

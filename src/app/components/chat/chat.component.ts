@@ -34,7 +34,7 @@ export class ChatComponent implements OnInit {
 
   sendMsg() {
     if(this.newMsj){
-      this.msgService.savMsg(this.userLogeado.uid, this.newMsj);
+      this.msgService.savMsg(this.userLogeado.uid,this.userLogeado.email, this.newMsj);
     }
  
   }

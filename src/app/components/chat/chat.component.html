@@ -12,7 +12,8 @@
     <div class="card-body">
       <div id="containerMsg" class="containerMsg">
         <div *ngFor="let chat of chats" class="p-2 margin" [ngClass]="userLogeado.uid==chat.id ? 'send' : 'recept'">
-         <p class="hour">{{chat.hour}}</p>         
+         <p class="hour">{{chat.hour}}</p>     
+         <p class="hour">{{chat.usr}}</p>     
          <p class="content">{{ chat.contenido }}</p>
         </div>
       </div>
